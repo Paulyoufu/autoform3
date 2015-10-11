@@ -1,0 +1,15 @@
+<template name="_contactsNew">
+
+        {{#autoForm collection="Contacts" id="contacts-new-form" type="insert"}}
+
+            <div class="content has-header overflow-scroll">
+                {{> afQuickFields omitFields="avatarUrl,details.active"}}
+            </div>
+            <div class="bar bar-header bar-stable">
+                <button data-dismiss="modal" type="button" class="button button-clear">取消</button>
+
+                <button type="submit" class="button button-positive button-clear">保存</button>
+            </div>
+        {{/autoForm}}
+
+</template>
